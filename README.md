@@ -1,5 +1,6 @@
 # Pattern-Recognition
-## 模式识别/机器学习相关
+
+模式识别/机器学习相关
 
 1. 鸢尾花学习 Logistic Regression 分类
 2. Minist：调用OpenCV中的SVM函数，用支持向量机进行手写数字识别
