@@ -84,6 +84,7 @@ def main():
         p[2] = 1 / (1 + np.exp(weight[0] @ X[i]) + np.exp(weight[1] @ X[i]) + np.exp(weight[1] @ X[i]))
         print(p, y[i])
 
+    # 没有结果
 
 if __name__ == '__main__':
     main()
