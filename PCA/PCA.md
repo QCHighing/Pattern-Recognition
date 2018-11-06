@@ -383,13 +383,13 @@ pd.isnull(dataset).values.any()        # 检查是否存在NaN值
 
     True
 
-
+#### 1.5.1 以列-众数填充，速度最慢
 
 
 ```python
 imp = SimpleImputer(strategy='most_frequent')
 imp.fit(dataset)
-dataset_nn = imp.transform(dataset)  # 以列-众数填充，速度最慢，返回 numpy.ndarray 类型dataset_nn
+dataset_nn = imp.transform(dataset)  # 返回 numpy.ndarray 类型dataset_nn
 dataset_nn[:5]
 ```
 
@@ -408,12 +408,12 @@ dataset_nn[:5]
             4.4000000e-03, 7.3843200e+01]])
 
 
-
+#### 1.5.2 以列-中位数填充
 
 ```python
 imp = SimpleImputer(strategy='median')
 imp.fit(dataset)
-dataset_nn = imp.transform(dataset)  # 以列-中位数填充，返回 numpy.ndarray 类型dataset_nn
+dataset_nn = imp.transform(dataset)  # 返回 numpy.ndarray 类型dataset_nn
 dataset_nn[:5]
 ```
 
@@ -432,12 +432,12 @@ dataset_nn[:5]
             4.4000000e-03, 7.3843200e+01]])
 
 
-
+#### 1.5.3 默认以列-平均数填充
 
 ```python
 imp = SimpleImputer()
 imp.fit(dataset)
-dataset_nn = imp.transform(dataset)  # 默认以列-平均数填充，返回 numpy.ndarray 类型dataset_nn
+dataset_nn = imp.transform(dataset)  # 返回 numpy.ndarray 类型dataset_nn
 dataset_nn[:5]
 ```
 
