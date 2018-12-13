@@ -71,7 +71,7 @@ eigVectsMain = eigVects[:, eigVal_index[:k]]   # 选取基向量
 X_ld = np.matmul(X, eigVectsMain)  # 降维
 train_X_ld = X_ld[:49502]
 test_X_ld = X_ld[49502:]
-_, nd = test_X_ld.shape; n  # 57
+_, nd = test_X_ld.shape; nd  # 57
 ```
 
 
