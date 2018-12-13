@@ -43,7 +43,7 @@ test_Y_predict = clf.predict_proba(test_X)
 
 
 ```python
-# 写入注册表
+# 写入测试表
 submission = pd.read_csv('sampleSubmission.csv')
 submission.iloc[:,1:] = test_Y_predict[:]
 submission.head()
