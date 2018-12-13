@@ -52,6 +52,12 @@ test_Y_predict = clf.predict_proba(test_X)
 
 
 ```python
-data = pd.DataFrame(test_Y_predict)
-data.to_csv('test_results.csv',sep=',', header=True, index=True)
+# 写入注册表
+submission = pd.read_csv('sampleSubmission.csv')
+submission.iloc[:,1:] = test_Y_predict[:]
+submission.head()
+submission.to_csv('sampleSubmission.csv',sep=',', header=True, index=False)
 ```
+
+## 提交得分：0.60535
+## 排名：第17名
