@@ -26,19 +26,10 @@ train_X = ss.fit_transform(np.float64(train_X))
 # 训练模型
 clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(90,70,50,30,10), random_state=1)
 clf.fit(train_X, train_Y)
-```
-
-    d:\program files\python\lib\site-packages\sklearn\neural_network\multilayer_perceptron.py:916: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
-      y = column_or_1d(y, warn=True)
-    
-
-
-```python
 r = clf.score(train_X, train_Y)
-print("R值(准确率):", r)
+print("R值(准确率):", r)  # R值(准确率): 0.8149771726394893
 ```
-
-    R值(准确率): 0.8149771726394893
+  
     
 
 
