@@ -11,4 +11,4 @@
 文档说明见《基于Logistic Regression的分类器设计.pdf》，主要针对 **考试录取预测** 和 **红酒分类问题** 的实现.
 
 # 12月更新-第二次作业：[Goods Recognition]
-通过构造MLP，已实现商品分类问题。通过自动调参，优化模型，目前lentcode排第13名。此问题作为第二次作业。
+通过构造MLP，已实现商品分类问题。通过自动调参，优化模型，目前lentcode排第13名。此问题作为小组第二次作业的一部分，完整作业[点击访问](https://github.com/kongziqing/Pattern-Recognition/tree/master/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%A4%A7%E4%BD%9C%E4%B8%9A)。
